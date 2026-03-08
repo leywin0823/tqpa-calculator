@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "TQPA Calculator",
+    "version": "1.0",
+    "description": "Calculate CQPA from school webpage data.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://my.su.edu.ph/student/grades.php"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16x16.jpg",
+        "48": "icon48x48.jpg",
+        "128": "icon128x128.jpg"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
